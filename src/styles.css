@@ -1,0 +1,155 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /* background-color: rgb(117, 5, 14); */
+  background-color: rgb(19, 120, 117);
+  /* background-color: rgb(29, 89, 79); */
+  text-align: center;
+  padding-top: 25px;
+  font-family: "Work Sans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Crimson Text", serif;
+}
+
+.title {
+  font-size: 4.7em;
+  color: white;
+}
+
+.course {
+  width: 275px;
+  background-color: white;
+  margin: 30px 20px;
+  height: 275px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px 0 rgb(0, 0, 0, 0.4);
+  transition: 0.4s;
+  padding: 25px;
+}
+
+.course:hover {
+  transform: scale(1.06);
+  box-shadow: 0 5px 40px 0 rgb(0, 0, 0, 0.7);
+}
+.course h1 {
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: 700;
+}
+.courseView {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.description {
+  font-style: italic;
+  color: gray;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.unit {
+  font-weight: 700;
+  font-size: 1.05em;
+}
+
+.detailView {
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding-top: 10px;
+  height: 75vh;
+  /* position: fixed;
+  top: 50%;
+  left: 50%; */
+
+  /* transform: translate(-50%, -50%); */
+  box-shadow: 0 5px 20px 0 rgb(0, 0, 0, 0.4);
+}
+
+.detailView h2 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.detailView h3 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+.detailTitle {
+  margin-top: 10px;
+  color: white;
+  font-size: 3em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.ratingGrid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 80%;
+  align-items: center;
+  padding: 0;
+}
+.rating {
+  margin: 5px 15px;
+}
+
+.close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 5%;
+  right: 4%;
+  color: white;
+}
+
+.close:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+input {
+  font-weight: 300;
+  border: 1.5px solid rgba(252, 252, 252, 0.6);
+  background-color: rgba(252, 252, 252, 0.2);
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 0 auto 10px auto;
+  display: block;
+  font-size: 1.5em;
+  color: white;
+
+  height: 1.2em;
+  width: 92%;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.detailedView-enter {
+  opacity: 0.01;
+}
+
+.detailedView-enter.detailedView-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.detailedView-leave {
+  opacity: 1;
+}
+
+.detailedView-leave.detailedView-leave-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
